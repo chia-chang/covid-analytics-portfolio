@@ -1,33 +1,69 @@
-# COVID-19 Analytics Portfolio
+# COVID-19 Data Analytics Demonstration
 
-> **Note**: This portfolio demonstrates my work as a Data Analyst on the COVID Analytics project at IBM, showcasing real-world data integration, automation, and visualization skills using publicly available data.
+This repository demonstrates a reproducible COVID-19 data analytics workflow inspired by previous work at IBM.  
+All data included here are synthetically generated for demonstration purposes and do not contain proprietary or sensitive information.
 
-- **80% reduction** in manual reporting time through automation
-- Integration of 5+ disparate data sources
-- Custom scripts enabling non-technical stakeholders to run analytics independently
-- Automated dashboards and reports
+---
 
+## Background and Objective
 
-## Skills Demonstrated
+Rapid and accurate analysis of COVID-19 data is critical for informed decision-making during the pandemic.  
+This project demonstrates an end-to-end analytics pipeline that cleans, integrates, and analyzes multi-source COVID-19 data, automates key metric calculations, generates reports and charts.
 
-### Data Engineering
-- Multi-source data integration (testing, cases, hospitalizations, deaths, vaccinations)
-- Data cleaning and standardization
-- ETL pipeline development
-- Data quality validation
+---
 
-### Data Analysis
-- Time series analysis (daily, weekly, monthly trends)
-- Demographic analysis (age groups, municipalities)
-- Statistical analysis and trend detection
-- KPI tracking and reporting
+## Highlights
 
-### Data Visualization
-- Dashboard design (Looker, Datawrapper)
-- Python visualizations (Matplotlib, Seaborn)
-- Interactive charts and reports
+- Synthetic raw data generation to mimic real-world COVID-19 datasets  
+- Data cleaning and integration, including 7-day rolling averages and week-over-week changes  
+- Automated reporting with multi-sheet Excel files and trend charts, significantly improving reporting efficiency by **80%** (from 2-3 hours of manual work to 10 minutes automated)
 
-### Automation & Tools
-- **Python**: Pandas, NumPy, Matplotlib, Seaborn
-- **Jupyter Notebooks**: Reproducible analysis
-- **Excel**: Automated report generation
+---
+
+## Data Description
+
+### Raw Data (`covid_raw_data.csv`)
+
+Synthetic daily time series mimicking COVID-19 pandemic data (2020-03-01 to 2024-01-31):  
+- `Date`: calendar date  
+- `Cases`: daily new confirmed cases  
+- `Tests`: daily diagnostic tests performed  
+- `Hospitalizations`: daily hospital admissions  
+- `Deaths`: daily reported deaths  
+- `Vaccinations`: daily vaccinations administered
+
+### Processed Data (`covid_integrated_data.csv`)
+
+Cleaned, merged, and enhanced dataset with additional calculated features:  
+- 7-day rolling averages  
+- Positivity rate (cases/tests)  
+- Week-over-week changes  
+- Cumulative totals
+
+---
+
+## Outputs Description
+
+### Daily/Weekly Report (`COVID_Report_YYYYMMDD.xlsx`)
+
+Summarizes daily and weekly key COVID-19 metrics and compares recent performance against prior weeks
+- Sheet 1: Summary
+- Sheet 2: Daily Data (Last 90 Days)
+- Sheet 3: Weekly Summary
+- Sheet 4: Key Metrics Comparison
+
+### Charts
+
+- `1_daily_cases_trend.png`: Daily Cases with 7-Day Moving Average
+-  `2_hospitalizations_trend.png`: Daily hospitalization with 7-Day Moving Average
+-  `3_positivity_rate.png`: 7-day average COVID-19 test positivity rate with a 5% reference line recommended by the WHO indicating concerning level of virus spread
+
+---
+
+## Technologies Used
+
+- Python 3.x  
+- Pandas & NumPy for data processing  
+- Matplotlib & Seaborn for visualization  
+- OpenPyXL / XlsxWriter for Excel report automation  
+
