@@ -3,7 +3,7 @@
 This folder contains the reports and charts that are generated in this project.
 
 ## Reports
-- **COVID_Report_20251112.xlsx:** 
+- **COVID_Report_YYYYMMDD.xlsx:** 
   This automatically generated report is designed to replace manual spreadsheet work. This file is produced by the `Automated_Reporting.ipynb` notebook.
   It summarizes daily and weekly key COVID-19 metrics and compares recent performance against prior weeks, enabling quick insights for stakeholders.
   
