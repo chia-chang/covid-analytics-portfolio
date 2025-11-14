@@ -1,4 +1,4 @@
-# Reports Directory
+# Outputs Directory
 
 This folder contains the reports and charts that are generated in this project.
 
