@@ -1,4 +1,4 @@
-# COVID-19 Data Analytics Demonstration
+# Python Analytics Automation
 This repository demonstrates a reproducible COVID-19 data analytics workflow inspired by previous work at IBM.  
 All data included here are synthetically generated for demonstration purposes and do not contain proprietary or sensitive information.
 
@@ -41,7 +41,7 @@ Each notebook covers a different stage of the analysis pipeline.
   **generated from**: [Data_Cleaning_and_Integration.ipynb](../notebooks/Data_Cleaning_and_Integration.ipynb)
 
 - Processed Data (`covid_integrated_data.csv`)
-  Cleaned, merged, and enhanced dataset with additional calculated features:  
+  Cleaned, merged, and enhanced the dataset with additional calculated features:  
   - 7-day rolling averages  
   - Positivity rate (cases/tests)  
   - Week-over-week changes  
