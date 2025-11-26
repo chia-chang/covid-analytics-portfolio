@@ -2,24 +2,46 @@
 This repository demonstrates a reproducible COVID-19 data analytics workflow inspired by previous work at IBM.  
 All data included here are synthetically generated for demonstration purposes and do not contain proprietary or sensitive information.
 
-## Background and Objective
-Rapid and accurate analysis of COVID-19 data is critical for informed decision-making during the pandemic.  
-This project demonstrates an end-to-end analytics pipeline that cleans, integrates, and analyzes multi-source COVID-19 data, automates key metric calculations, and generates reports and charts.
+## Overview
+Rapid and accurate analysis of COVID-19 data is critical for informed decision-making during the pandemic. This project demonstrates an end-to-end analytics system that automates the entire workflow from data cleaning and integration to metric calculation and report generation, which reduced reporting time by **80%** (from 2-3 hours of manual work to 10 minutes automated).
+This system showcases my approach to solving business problems at scale: identify inefficiencies, design comprehensive solutions, and deliver measurable impact through automation.
 
-## Highlights
-- Synthetic raw data generation to mimic real-world COVID-19 datasets  
-- Data cleaning and integration, including 7-day rolling averages and week-over-week changes  
-- Automated reporting with multi-sheet Excel files and trend charts, significantly improving reporting efficiency by **80%** (from 2-3 hours of manual work to 10 minutes automated)
+## Business Problem
+Some critical data challenges healthcare organizations faced during the pandemic:
+- Hours of manual data aggregation from multiple sources daily
+- Inconsistent metric calculations across teams led to conflicting reports
+- Delayed reporting meant decisions were made on outdated information
+- Manual processes couldn't scale with increasing reporting demands
+
+## Solution
+Python-based analytics system with these key points:
+- **Data Integration Pipeline**: Automates cleaning, validation, and standardization from multi-source COVID data
+- **Standardized metrics** (7-day rolling averages, positivity rates, and week-over-week changes): Ensure consistency across all outputs
+- **Automated Reporting**: Generates a publication-ready Excel report and visualizations for executive audiences
+
+## My Philosophy
+- System-level thinking:
+  The solution addresses the entire workflow, not just isolated pieces. From data ingestion to executive reporting, each component works together to deliver end-to-end value.
+- Reliability and maintainability:
+  Keeping the code clean and robust, so it would be easy for anyone to understand and modify the logic without extensive documentation.
+- Business-focused outputs
+  Reports and visualizations are designed for stakeholder consumption, not just technical audiences. Clean formatting, clear messaging, and actionable insights.
+
+## Impact
+- **80% reduction of reporting time**: From 2~3 hours to 10 minutes
+- **Metrics consistency**: Eliminated discrepancies between teams
+- **Same-day insights**: Enables real-time decision-making with current data
+- **Scalable Solutions**: Handles increasing data volumes without additional changes
 
 ## Notebooks Description
 Each notebook covers a different stage of the analysis pipeline.
 
 - Data Cleaning and Integration ([View Notebook](../notebooks/Data_Cleaning_and_Integration.ipynb))  
   Shows data loading, cleaning steps, and integration of sources
-  - Generated a raw dataset (`covid_raw_data.csv`) for use in this file
+  - Generate a raw dataset (`covid_raw_data.csv`) for use in this file
   - Clean column names, handle missing values, and standardize date formats
   - Generate derived metrics such as 7-day averages, cumulative totals, and week-over-week changes
-  - Exporting the processed dataset (`covid_integrated_data.csv`) for use in the (`Automated_Reporting.ipynb`) notebook
+  - Exporting the processed dataset (`covid_integrated_data.csv`) for downstream reporting
 
 - Automated Reporting ([View Notebook](../notebooks/Automated_Reporting.ipynb))  
   Demonstrates how the reporting process can be run automatically
@@ -57,7 +79,8 @@ Each notebook covers a different stage of the analysis pipeline.
 - Charts ([View sample charts](../outputs/charts))
   - **1_daily_cases_trend.png**: Daily Cases with 7-Day Moving Average
   - **2_hospitalizations_trend.png**: Daily hospitalization with 7-Day Moving Average
-  - **3_positivity_rate.png**: 7-day average COVID-19 test positivity rate with a 5% reference line recommended by the WHO indicating concerning level of virus spread  
+  - **3_positivity_rate.png**: 7-day average COVID-19 test positivity rate with a 5% reference line recommended by the WHO, indicating concerning level of virus spread  
+
 
 
 ## Technologies Used
@@ -65,4 +88,3 @@ Each notebook covers a different stage of the analysis pipeline.
 - Pandas & NumPy for data processing  
 - Matplotlib & Seaborn for visualization  
 - OpenPyXL / XlsxWriter for Excel report automation  
-
