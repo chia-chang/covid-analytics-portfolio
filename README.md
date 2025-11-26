@@ -1,12 +1,12 @@
 # Python Portfolio: COVID Analytics Automation
-This repository demonstrates a reproducible COVID-19 data analytics workflow inspired by previous work at IBM.  
-All data included here are synthetically generated for demonstration purposes and do not contain proprietary or sensitive information.
+Automated COVID-19 data pipeline that cut reporting time by 80% (2-3 hours → 10 minutes).
+Note: All data is synthetically generated for demonstration purposes.
 
 ## Overview
-Rapid and accurate analysis of COVID-19 data is critical for informed decision-making during the pandemic. This project demonstrates an end-to-end analytics system that automates the entire workflow from data cleaning and integration to metric calculation and report generation, which reduced reporting time by **80%** (from 2-3 hours of manual work to 10 minutes automated).
+This project demonstrates a reproducible COVID-19 data analytics workflow inspired by previous work at IBM. Rapid and accurate analysis of COVID-19 data is critical for informed decision-making during the pandemic. This project demonstrates an end-to-end analytics system that automates the entire workflow from data cleaning and integration to metric calculation and report generation, which reduced reporting time by **80%** (from 2-3 hours of manual work to 10 minutes automated).
 This system showcases my approach to solving business problems at scale: identify inefficiencies, design comprehensive solutions, and deliver measurable impact through automation.
 
-## Business Problem
+## The Problem
 Some critical data challenges healthcare organizations faced during the pandemic:
 - Hours of manual data aggregation from multiple sources daily
 - Inconsistent metric calculations across teams led to conflicting reports
